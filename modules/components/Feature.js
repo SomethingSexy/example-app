@@ -1,9 +1,9 @@
-import React from "react";
-import { Card, CardActions, CardContent, Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Card, CardActions, CardContent, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 /**
  * Represents an example feature.
- * @returns 
+ * @returns
  */ export const FeatureItem = ({ name , path  })=>{
     return(/*#__PURE__*/ React.createElement(Card, {
         variant: "outlined"

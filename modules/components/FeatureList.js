@@ -1,9 +1,9 @@
-import React from "react";
-import { GridList, GridListTile } from "@material-ui/core";
-import { FeatureItem } from "./Feature";
+import React from 'react';
+import { GridList, GridListTile } from '@material-ui/core';
+import { FeatureItem } from './Feature';
 /**
  * Represent a list of example features.
- * @returns 
+ * @returns
  */ export const FeatureList = ({ features  })=>{
     return(/*#__PURE__*/ React.createElement(GridList, {
         cols: 4

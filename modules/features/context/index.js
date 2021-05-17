@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { ChildA } from "./components/ChildA";
-import { FeatureContext } from "./context";
+import React, { useEffect, useState } from 'react';
+import { Typography } from '@material-ui/core';
+import { ChildA } from './components/ChildA';
+import { FeatureContext } from './context';
 export default (()=>{
     const [contextValue, setContextValue] = useState({
         state: 'foo'
@@ -16,5 +17,5 @@ export default (()=>{
     }, []);
     return(/*#__PURE__*/ React.createElement(FeatureContext.Provider, {
         value: contextValue
-    }, /*#__PURE__*/ React.createElement("div", null, "This example shows context being pulled in multiple levels deep."), /*#__PURE__*/ React.createElement(ChildA, null)));
+    }, /*#__PURE__*/ React.createElement(Typography, null, "This example shows context being pulled in multiple levels deep."), /*#__PURE__*/ React.createElement(ChildA, null)));
 });

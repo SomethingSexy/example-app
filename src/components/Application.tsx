@@ -11,8 +11,12 @@ import {
 import { Menu as MenuIcon } from '@material-ui/icons';
 import { FeatureList } from './FeatureList';
 import RootContext from '../features/context/index';
+import RootContextDI from '../features/context-as-di/index';
 
-const features = [{ name: 'foo', path: '/context', Component: RootContext }];
+const features = [
+  { name: 'Context', path: '/context', Component: RootContext },
+  { name: 'Context as DI', path: '/contextdi', Component: RootContextDI }
+];
 
 export const Application = () => {
   return (
