@@ -5,5 +5,5 @@ import { createContext } from 'react';
  * of the system.  Or simply a way to better testing without having to do more complex mocking.
  */
 export const FeatureContext = createContext({
-  getFoo: () => Promise.resolve(null)
+  getFoo: () => Promise.resolve(null),
 });

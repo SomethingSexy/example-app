@@ -12,10 +12,12 @@ import { Menu as MenuIcon } from '@material-ui/icons';
 import { FeatureList } from './FeatureList';
 import RootContext from '../features/context/index';
 import RootContextDI from '../features/context-as-di/index';
+import RootRedux from '../features/redux/index';
 
 const features = [
   { name: 'Context', path: '/context', Component: RootContext },
-  { name: 'Context as DI', path: '/contextdi', Component: RootContextDI }
+  { name: 'Context as DI', path: '/contextdi', Component: RootContextDI },
+  { name: 'Simple Redux', path: '/redux', Component: RootRedux },
 ];
 
 export const Application = () => {
