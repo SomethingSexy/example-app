@@ -9,8 +9,7 @@ export default () => {
   return (
     <Provider store={store}>
       <Typography>
-        This example shows using context as a dependency injection. Useful for
-        tests or building framework level components.
+        This example shows a simple setup of @reduxjs/toolkit and react-redux
       </Typography>
       <ReadStore />
       <UpdateStore />
